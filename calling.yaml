@@ -1,0 +1,6 @@
+---
+- hosts: web
+  tasks:
+    - name: call nginx role
+      include_role:
+        name: nginx 

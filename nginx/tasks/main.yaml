@@ -1,0 +1,9 @@
+---
+- name: installing nginx
+  package:
+    name: nginx
+    state: present
+- name: copy a file
+  copy:
+    src: test.html
+    dest: /var/www/html/index.html
